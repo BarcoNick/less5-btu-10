@@ -1,0 +1,45 @@
+/* box sizing */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    padding-top: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+/* hover effects */
+.wraper {
+    height: 500px;
+    width: 500px;
+    background-color: lightblue;
+    position: relative;
+    /* transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s; */
+    transition: all 0.2s linear 1s;
+}
+.wraper-child {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: all 0.2s;
+}
+.wraper-child:hover {
+    background-color: green;
+    transform: translate(-50%,-50%) rotate(0deg);
+}
+.wraper:hover {
+    background-color: chocolate;
+}
+/* .wraper:hover .wraper-child {
+    background-color: blueviolet;
+} */
+
+@keyframes mymove {
+    
+}
