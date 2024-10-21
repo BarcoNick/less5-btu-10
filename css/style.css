@@ -39,7 +39,66 @@
 /* .wraper:hover .wraper-child {
     background-color: blueviolet;
 } */
+.image-wraper {
+    /* position: relative; */
+    height: 200px;
+}
+.image-el {
+    width: 150px;
+    /* animation-name: carmove;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite; */
+    animation: carmove 5s infinite 3s;
+    /* position: absolute; */
+}
+@keyframes carmove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(600px);
+    }
+}
+/* responisive example */
+.container {
+    max-width: 1197;
+    width: 90%;
+    background-color: lightblue;
+    margin: 0 auto;
+    display: flex;
+}
+.btn-box {
+    max-width: 160px;
+    height: 48px;
+    width: 100%;
+    background-color: #f84646;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-block {
+    max-width: 608px;
+    width: 100%;
+    background-color: lightgray;
+    margin-right: 85px;
+}
+.right-block {
+    max-width: 504px;
+    width: 100%;
+    height: 480px;
+    background-color: yellow;
+}
+.right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-@keyframes mymove {
-    
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column-reverse;
+    }
 }
